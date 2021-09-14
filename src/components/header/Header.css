@@ -1,0 +1,10 @@
+.Header--box {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.Header--Logo {
+  width: 300px;
+  height: auto;
+}

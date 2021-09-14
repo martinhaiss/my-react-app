@@ -1,0 +1,52 @@
+.Footer--box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Footer--Button-Gr {
+  background-color: tomato;
+  border: none;
+  color: white;
+  padding: 15px 53px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.Footer--Button-Hu {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 15px 53px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.Footer--Button-Ra {
+  background-color: royalblue;
+  border: none;
+  color: white;
+  padding: 15px 53px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+.Footer--Button-Sl {
+  color: green;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 53px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
