@@ -19,11 +19,12 @@ m .Button-more {
 }
 
 .Card--img {
-  border-radius: 100%;
+  border-radius: 50%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   width: 200px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   margin-top: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
