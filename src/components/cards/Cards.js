@@ -30,7 +30,8 @@ function Cards() {
 
 export default Cards;
 
-/*
+/* --- old cards
+
 function Cards() {
   return (
     <div className="Card--box">
