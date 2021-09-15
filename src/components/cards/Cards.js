@@ -22,6 +22,10 @@ function Cards() {
           characterName={character.name}
           house={character.house}
           imgUrl={character.image}
+          born={character.dateOfBirth}
+          ancestry={character.ancestry}
+          patronus={character.patronus}
+          actor={character.actor}
           key={character.name}
         />
       ))}
