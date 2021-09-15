@@ -1,16 +1,17 @@
 import "./Cards.css";
-import CardHermione from "../CardHermione/CardHermione";
-import CardCedric from "../CardCedric/CardCedric";
-import CardDraco from "../CardDraco/CardDraco";
-import CardHarry from "../CardHarry/CardHarry";
-import CardRon from "../CardRon/CardRon";
-import harryPicture from "../img/harry.png";
-import dracoPicture from "../img/draco.png";
-import hermionePicture from "../img/hermione.png";
-import cedricPicture from "../img/cedric.png";
-import ronPicture from "../img/ron.png";
-import data from "../data.json";
+// import CardHermione from "../CardHermione/CardHermione";
+// import CardCedric from "../CardCedric/CardCedric";
+// import CardDraco from "../CardDraco/CardDraco";
+// import CardHarry from "../CardHarry/CardHarry";
+// import CardRon from "../CardRon/CardRon";
+// import harryPicture from "../img/harry.png";
+// import dracoPicture from "../img/draco.png";
+// import hermionePicture from "../img/hermione.png";
+// ((import cedricPicture from "../img/cedric.png";
+// import ronPicture from "../img/ron.png";
 
+import "./Cards.css";
+import data from "../data.json";
 import Card from "../Card/Card.js";
 
 function Cards() {
@@ -30,7 +31,8 @@ function Cards() {
 
 export default Cards;
 
-/* --- old cards
+/* ------ former "cards.js" before import via "data.json" --------
+
 
 function Cards() {
   return (
