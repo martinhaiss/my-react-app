@@ -19,5 +19,23 @@
 }
 
 .Button-more {
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.EmojiBar {
+  margin-top: 10px;
+}
+
+.EmojiButton {
+  margin-left: 5px;
+  background-color: dimgray;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
 }
