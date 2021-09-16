@@ -55,28 +55,28 @@ function Card({
         <nav className="EmojiBar">
           <button
             className="EmojiButton"
-            onClick={() => emojiButtonClick("❤️")}
+            onClick={() => emojiButtonClick("❤️ ")}
           >
             {" "}
             ❤️{" "}
           </button>
           <button
             className="EmojiButton"
-            onClick={() => emojiButtonClick("👍")}
+            onClick={() => emojiButtonClick("👍 ")}
           >
             {" "}
             👍{" "}
           </button>
           <button
             className="EmojiButton"
-            onClick={() => emojiButtonClick("👎")}
+            onClick={() => emojiButtonClick("👎 ")}
           >
             {" "}
             👎{" "}
           </button>
           <button
             className="EmojiButton"
-            onClick={() => emojiButtonClick("🤡")}
+            onClick={() => emojiButtonClick("🤡 ")}
           >
             {" "}
             🤡{" "}
@@ -89,9 +89,10 @@ function Card({
             🤓{" "}
           </button>
         </nav>
+
         <h2>
-          {emoji}
-          {characterName}
+          {" "}
+          {emoji} {characterName}
         </h2>
         <p className={color}>House: {house}</p>
         {showDetails ? (
