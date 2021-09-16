@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./Footer.css";
 
-function Footer() {
-  const [activeHouse, setActiveHouse] = useState("");
+function Footer({ activeHouse, onHousebuttonClick }) {
   return (
     <footer className="Footer--box">
       <nav className="Footer--nav">
@@ -10,7 +9,7 @@ function Footer() {
           className={`${
             activeHouse === "Gryffindor" ? "footer__button--active-gr" : ""
           } Footer--Button-Gr`}
-          onClick={() => setActiveHouse("Gryffindor")}
+          onClick={() => onHousebuttonClick("Gryffindor")}
         >
           Gr
         </button>
@@ -18,7 +17,7 @@ function Footer() {
           className={`${
             activeHouse === "Hufflepuff" ? "footer__button--active-hu" : ""
           } Footer--Button-Hu`}
-          onClick={() => setActiveHouse("Hufflepuff")}
+          onClick={() => onHousebuttonClick("Hufflepuff")}
         >
           Hu
         </button>
@@ -26,7 +25,7 @@ function Footer() {
           className={`${
             activeHouse === "Ravenclaw" ? "footer__button--active-ra" : ""
           } Footer--Button-Ra`}
-          onClick={() => setActiveHouse("Ravenclaw")}
+          onClick={() => onHousebuttonClick("Ravenclaw")}
         >
           Ra
         </button>
@@ -34,7 +33,7 @@ function Footer() {
           className={`${
             activeHouse === "Slytherin" ? "footer__button--active-sl" : ""
           } Footer--Button-Sl`}
-          onClick={() => setActiveHouse("Slytherin")}
+          onClick={() => onHousebuttonClick("Slytherin")}
         >
           Sl
         </button>

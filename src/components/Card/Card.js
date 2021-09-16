@@ -100,11 +100,11 @@ function Card({
             <p>Date of birth: {born}</p>
             <p>Ancestry: {ancestry} </p>
             <p>Patronus: {patronus}</p>
-            <p>Actor/Actress: {actor}</p>
+            <p>Actor: {actor}</p>
           </aside>
         ) : null}
         <button className="Button-more" onClick={handleDetailsButtonClick}>
-          more
+          show {showDetails ? "less" : "more"}
         </button>
       </div>
     </section>
