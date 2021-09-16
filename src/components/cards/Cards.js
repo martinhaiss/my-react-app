@@ -2,11 +2,18 @@ import "./Cards.css";
 import "./Cards.css";
 import data from "../data.json";
 import Card from "../Card/Card.js";
+import { useState } from "react";
 
-function Cards() {
+function Cards({ data, activeHouse }) {
+  const filteredData = data.filter((character) => {
+    return character.house === activeHouse;
+  });
+
+  const shownData = activeHouse === "All" ? data : filteredData;
+
   return (
     <div className="Card--box">
-      {data.map((character) => (
+      {shownData.map((character) => (
         <Card
           characterName={character.name}
           house={character.house}
