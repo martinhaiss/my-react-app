@@ -5,37 +5,46 @@
   justify-content: flex-start;
 }
 
-.Button-more {
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-}
-
 .Card--Person-Info {
   margin-left: 50px;
 }
 
-.Button-more {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.EmojiBar {
-  margin-top: 10px;
-}
-
-.EmojiButton {
-  margin-left: 5px;
-  background-color: black;
-  border-radius: 10px 10px 10px 10px;
+.FavoriteButton {
+  margin-left: 25px;
+  border-radius: 50%;
   border: none;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
+  background-color: black;
+}
+
+.FavoriteButton-active {
+  margin-left: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: black;
+}
+
+.FavImg {
+  width: 20px;
+  height: auto;
+  padding: 5px 5px;
+}
+
+.red {
+  background-color: tomato;
+}
+
+.blue {
+  background-color: royalblue;
+}
+
+.yellow {
+  background-color: goldenrod;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.grey {
+  background-color: slategrey;
 }

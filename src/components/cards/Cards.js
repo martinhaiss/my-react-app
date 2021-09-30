@@ -1,8 +1,5 @@
-import "./Cards.css";
-import "./Cards.css";
-import data from "../data.json";
 import Card from "../Card/Card.js";
-import { useState } from "react";
+import styled, { css } from "styled-components";
 
 function Cards({ data, activeHouse }) {
   const filteredData = data.filter((character) => {
@@ -12,7 +9,7 @@ function Cards({ data, activeHouse }) {
   const shownData = activeHouse === "All" ? data : filteredData;
 
   return (
-    <div className="Card--box">
+    <CardMain>
       {shownData.map((character) => (
         <Card
           characterName={character.name}
@@ -25,8 +22,14 @@ function Cards({ data, activeHouse }) {
           key={character.name}
         />
       ))}
-    </div>
+    </CardMain>
   );
 }
+
+const CardMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+`;
 
 export default Cards;

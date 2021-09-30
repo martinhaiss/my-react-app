@@ -1,5 +1,8 @@
-import { useState } from "react";
 import "./Card.css";
+import { useState } from "react";
+import FavYes from "../img/fav-yes.png";
+import Fav from "../img/fav.png";
+import styled, { css } from "styled-components";
 
 function tellColorName(house) {
   let color;
@@ -50,45 +53,35 @@ function Card({
 
   return (
     <section className={`${color} Card`}>
-      <img className="Card--img" src={imgUrl} />
+      <CardImg src={imgUrl} />
       <div className="Card--Person-Info">
-        <nav className="EmojiBar">
-          <button
-            className="EmojiButton"
-            onClick={() => emojiButtonClick("❤️ ")}
-          >
-            {" "}
-            ❤️{" "}
-          </button>
-          <button
-            className="EmojiButton"
-            onClick={() => emojiButtonClick("👍 ")}
-          >
+        <EmojiBar>
+          <EmojiButton onClick={() => emojiButtonClick("👍 ")}>
             {" "}
             👍{" "}
-          </button>
-          <button
-            className="EmojiButton"
-            onClick={() => emojiButtonClick("👎 ")}
-          >
+          </EmojiButton>
+          <EmojiButton onClick={() => emojiButtonClick("👎 ")}>
             {" "}
             👎{" "}
-          </button>
-          <button
+          </EmojiButton>
+          <EmojiButton
             className="EmojiButton"
             onClick={() => emojiButtonClick("🤡 ")}
           >
             {" "}
             🤡{" "}
-          </button>
-          <button
+          </EmojiButton>
+          <EmojiButton
             className="EmojiButton"
             onClick={() => emojiButtonClick("🤓")}
           >
             {" "}
             🤓{" "}
+          </EmojiButton>
+          <button className="FavoriteButton">
+            <img className="FavImg" src={Fav} alt="Favorite Botton" />
           </button>
-        </nav>
+        </EmojiBar>
 
         <h2>
           {" "}
@@ -103,12 +96,52 @@ function Card({
             <p>Actor: {actor}</p>
           </aside>
         ) : null}
-        <button className="Button-more" onClick={handleDetailsButtonClick}>
+        <ButtonMore onClick={handleDetailsButtonClick}>
           show {showDetails ? "less" : "more"}
-        </button>
+        </ButtonMore>
       </div>
     </section>
   );
 }
+
+const EmojiButton = styled.button`
+  margin-left: 5px;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+`;
+
+const EmojiBar = styled.nav`
+  margin-top: 10px;
+`;
+
+const ButtonMore = styled.button`
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 10px 10px;
+`;
+
+const CardImg = styled.img`
+  border-radius: 50%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+`;
 
 export default Card;
